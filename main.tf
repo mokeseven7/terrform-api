@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "mokeseven7"
+   organization = "mokeseven7"
 
     workspaces {
       name = "mokeseven7"
@@ -48,7 +48,7 @@ resource "aws_security_group" "web-sg" {
 }
  
 
- 
+
 output "web-address" {
   value = "${aws_instance.web.public_dns}:8080"
 }
